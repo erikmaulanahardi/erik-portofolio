@@ -11,7 +11,7 @@ class PortofolioController extends Controller
     {
         $lang = $request->query('lang', 'id');
 
-        if(! in_array($lang, ['id', 'en'], true)) {
+        if (! in_array($lang, ['id', 'en'], true)) {
             $lang = 'id';
         }
 
@@ -27,8 +27,8 @@ class PortofolioController extends Controller
                 'eyebrow' => 'Portofolio Backend Developer',
                 'headline' => 'Junior Back-End Developer yang Memiliki Fokus pada Pengembangan Aplikasi Web & Database yang Andal',
                 'intro' => 'Halo! Saya Erik Maulana Hardianto, Lulusan S1 Teknik Informatika yang berfokus pada Back-End Web Development. Saya sedang membangun karier di bidang backend development dan ingin terus mengembangkan kemampuan dalam membangun aplikasi web. Saya berfokus pada perancangan RESTful API, pemrosesan data relasional, dan pengembangan logika bisnis menggunakan PHP, Laravel, serta MySQL.',
-                'projects_title' => 'Proyek pilihan',
-                'projects_intro' => 'Project kuliah dan tugas akhir yang akan saya tampilkan di sini.',
+                'projects_title' => 'Karya & Proyek Saya',
+                'projects_intro' => 'Berbagai project yang akan saya tampilkan di sini.',
                 'project_placeholder' => 'Detail project akan ditambahkan setelah informasi project tersedia.',
                 'about_title' => 'Tentang saya',
                 'about_text' => 'Berfokus pada pengembangan arsitektur server-side yang andal, optimasi query database, serta penerapan praktik clean code untuk membangun sistem web yang scalable.',
@@ -57,8 +57,8 @@ class PortofolioController extends Controller
                 'eyebrow' => 'Backend Developer Portfolio',
                 'headline' => 'Junior Back-End Developer with a Focus on Building Reliable Web Applications & Databases',
                 'intro' => "Hello! I'm Erik Maulana Hardianto, a Computer Science graduate specializing in Back-End Web Development. I am currently building my career in backend development and eager to enhance my skills in creating web applications. My focus lies in designing RESTful APIs, processing relational data, and developing business logic using PHP, Laravel, and MySQL.",
-                'projects_title' => 'Selected projects',
-                'projects_intro' => 'Academic projects and my final project will be featured here.',
+                'projects_title' => 'My Work & Projects',
+                'projects_intro' => 'Here are some of the projects I have worked on.',
                 'project_placeholder' => 'Project details will be added once the project information is available.',
                 'about_title' => 'About me',
                 'about_text' => "I focus on developing reliable server-side architecture, optimizing database queries, and implementing clean code practices to build scalable web systems.",
@@ -78,77 +78,112 @@ class PortofolioController extends Controller
         ];
 
         $projects = [
-            'id'=> [
-            'title' => 'Sistem Manajemen Data Karyawan dan Rekapitulasi Payroll pada PT BPR BKK Ungaran',
-            'type' => 'Tugas Akhir',
-            'description' => 'Aplikasi berbasis web yang dikembangkan untuk mengelola data karyawan dan mendukung proses penggajian di PT BPR BKK Ungaran. Dibangun menggunakan PHP dan MySQL, sistem ini membantu mengorganisasi informasi karyawan serta menghitung gaji berdasarkan jam kerja, insentif, dan lembur.',
-            'features' => [
-            'CRUD data karyawan',
-            'Perhitungan otomatis gaji karyawan berdasarkan jam kerja, insentif, dan lembur',
-            'Presensi Karyawan',
-            'Cetak slip gaji karyawan (Take Home Pay) dalam format PDF',
-            ],
-            'technologies' => ['PHP', 'MySQL', 'Bootstrap'],
-            'github' => 'https://github.com/erikmaulanahardi/employee-payroll-management-system-php',
+            [
+                'id' => [
+                    'title' => 'Sistem Manajemen Data Karyawan dan Rekapitulasi Payroll pada PT BPR BKK Ungaran',
+                    'type' => 'Tugas Akhir',
+                    'description' => 'Aplikasi berbasis web untuk mengelola data karyawan dan mendukung proses penggajian di PT BPR BKK Ungaran. Sistem ini membantu mengorganisasi informasi karyawan serta menghitung gaji berdasarkan jam kerja, insentif, dan lembur.',
+                    'features' => [
+                        'CRUD data karyawan',
+                        'Perhitungan otomatis gaji berdasarkan jam kerja, insentif, dan lembur',
+                        'Presensi karyawan',
+                        'Cetak slip gaji dalam format PDF',
+                    ],
+                    'technologies' => ['PHP', 'MySQL', 'Bootstrap'],
+                    'github' => 'https://github.com/erikmaulanahardi/employee-payroll-management-system-php',
+                    'image' => 'images/projects/ttu-dashboard-screenshot.png',
+                ],
+
+                'en' => [
+                    'title' => 'Employee Data Management and Payroll Recapitulation System at PT BPR BKK Ungaran',
+                    'type' => 'Final Project',
+                    'description' => 'A web-based application for managing employee data and supporting payroll processes at PT BPR BKK Ungaran, including salary calculations based on working hours, incentives, and overtime.',
+                    'features' => [
+                        'Employee data CRUD',
+                        'Automatic salary calculations',
+                        'Employee attendance tracking',
+                        'PDF payslip generation',
+                    ],
+                    'technologies' => ['PHP', 'MySQL', 'Bootstrap'],
+                    'github' => 'https://github.com/erikmaulanahardi/employee-payroll-management-system-php',
+                    'image' => 'images/projects/ttu-dashboard-screenshot.png',
+                ],
             ],
 
-            'en' => [
-            'title' => 'Employee Data Management and Payroll Recapitulation System at PT BPR BKK Ungaran',
-            'type' => 'Final Project',
-            'description' => 'A web-based application developed to manage employee data and support the payroll process at PT BPR BKK Ungaran. Built using PHP and MySQL, this system helps organize employee information and calculate salaries based on working hours, incentives, and overtime.',
-            'features' => [
-            'CRUD employee data',
-            'Automatic salary calculation based on working hours, incentives, and overtime',
-            'Employee attendance tracking',
-            'Generate employee payslips (Take Home Pay) in PDF format', 
+            [
+                'id' => [
+                    'title' => 'Grafika Komputer - Visualisasi 2D Gedung Asrama FTI UKSW',
+                    'description' => ' Proyek grafika komputer untuk mereplikasi tampak depan gedung asrama Fakultas Teknik Informasi Universitas Kristen Satya Wacana menggunakan C++ dan OpenGL.',
+                    'type' => 'Proyek Akademik',
+                    'features' => [
+                        'Visualiasi bangunan asrama dalam 2D',
+                        'Penggunaan bentuk geometris dan warna',
+                        'Penggambaran detail bangunan seperti jendela, pintu, dan atap yang cukup detail dan akurat',
+                    ],
+                    'technologies' => ['C++', 'OpenGL', 'GLUT'],
+                    'github' => 'https://github.com/erikmaulanahardi/opengl-faculty-dormitory-2d',
+                    'image' => 'images/projects/faculty-dormitory-2d.png',
+                ],
+
+                'en' => [
+                    'title' => 'Computer Graphics - 2D Visualization of the FTI UKSW Dormitory Building',
+                    'description' => '2D visualization of the dormitory building at Faculty of Computer Science, Satya Wacana Christian University.',
+                    'type' => 'Academic Project',
+                    'features' => [
+                        '2D visualization of the dormitory building',
+                        'Use of geometric shapes and colors',
+                        'Detailed representation of building features such as windows, doors, and roof',
+                    ],
+                    'technologies' => ['C++', 'OpenGL', 'GLUT'],
+                    'github' => 'https://github.com/erikmaulanahardi/opengl-faculty-dormitory-2d',
+                    'image' => 'images/projects/faculty-dormitory-2d.png',
+                ],
             ],
-            'technologies' => ['PHP', 'MySQL', 'Bootstrap'],
-            'github' => 'https://github.com/erikmaulanahardi/employee-payroll-management-system-php',
-            ],
+
         ];
 
         $about = [
             'id' => [
-            'title' => 'Tentang Saya',
-            'description' => "Saya merupakan lulusan Teknik Informatika yang memiliki minat besar pada pengembangan web backend dan pengelolaan basis data relasional.\n\n Melalui tugas akhir, saya mengembangkan secara mandiri Sistem Manajemen Data Karyawan dan Rekapitulasi Payroll menggunakan PHP dan MySQL, dengan fitur pengelolaan data karyawan serta perhitungan gaji otomatis.\n\n Saya juga memperoleh pengalaman praktik melalui program magang sebagai Web Developer di Balai PSDA Bodri Kuto. Selama magang, saya membantu membangun ulang website instansi menggunakan Joomla CMS serta membantu menangani kendala teknis komputer yang dialami staf.\n\n Saat ini, saya terus mengembangkan kemampuan menggunakan Laravel dan teknologi web modern. Saya antusias untuk belajar dari developer berpengalaman, berkontribusi dalam proyek nyata, dan bertumbuh sebagai Backend Developer.",
+                'title' => 'Tentang Saya',
+                'description' => "Saya merupakan lulusan Teknik Informatika yang memiliki minat besar pada pengembangan web backend dan pengelolaan basis data relasional.\n\n Melalui tugas akhir, saya mengembangkan secara mandiri Sistem Manajemen Data Karyawan dan Rekapitulasi Payroll menggunakan PHP dan MySQL, dengan fitur pengelolaan data karyawan serta perhitungan gaji otomatis.\n\n Saya juga memperoleh pengalaman praktik melalui program magang sebagai Web Developer di Balai PSDA Bodri Kuto. Selama magang, saya membantu membangun ulang website instansi menggunakan Joomla CMS serta membantu menangani kendala teknis komputer yang dialami staf.\n\n Saat ini, saya terus mengembangkan kemampuan menggunakan Laravel dan teknologi web modern. Saya antusias untuk belajar dari developer berpengalaman, berkontribusi dalam proyek nyata, dan bertumbuh sebagai Backend Developer.",
             ],
 
             'en' => [
-            'title' => 'About Me',
-            'description' => "I'm a Computer Science graduate with a strong interest in backend web development and relational database management.\n\n Through my final project, I independently developed an Employee Data Management and Payroll Recapitulation System using PHP and MySQL, featuring employee data management and automated payroll calculations.\n\n I also gained practical experience through an internship program as a Web Developer at Balai PSDA Bodri Kuto. During the internship, I assisted in rebuilding the institution's website using Joomla CMS and helped address technical computer issues faced by staff.\n\n Currently, I am continuously enhancing my skills with Laravel and modern web technologies. I am eager to learn from experienced developers, contribute to real-world projects, and grow as a Backend Developer.",
+                'title' => 'About Me',
+                'description' => "I'm a Computer Science graduate with a strong interest in backend web development and relational database management.\n\n Through my final project, I independently developed an Employee Data Management and Payroll Recapitulation System using PHP and MySQL, featuring employee data management and automated payroll calculations.\n\n I also gained practical experience through an internship program as a Web Developer at Balai PSDA Bodri Kuto. During the internship, I assisted in rebuilding the institution's website using Joomla CMS and helped address technical computer issues faced by staff.\n\n Currently, I am continuously enhancing my skills with Laravel and modern web technologies. I am eager to learn from experienced developers, contribute to real-world projects, and grow as a Backend Developer.",
             ],
         ];
 
         $experience = [
-        [
-            'company' => 'Balai Pengelolaan Sumber Daya Air Bodri Kuto, Semarang, Central Java, Indonesia',
-            'position' => 'Web Developer Intern (April 2025 - July 2025)',
-            'description' => [
-            'id' => [
-                'Membuat dan mengembangkan ulang website Sistem Informasi Balai PSDA Bodri Kuto dari versi lama menjadi versi baru menggunakan CMS Joomla.',
-                'Membantu karyawan menangani kendala pada komputer mereka.',
-            ],
-            'en' => [
-                'Worked on rebuilding and developing the Balai PSDA Bodri Kuto Information System website, replacing the older version with a new version using Joomla CMS.',
-                'Assisted staff with computer-related technical issues.',
+            [
+                'company' => 'Balai Pengelolaan Sumber Daya Air Bodri Kuto, Semarang, Central Java, Indonesia',
+                'position' => 'Web Developer Intern (April 2025 - July 2025)',
+                'description' => [
+                    'id' => [
+                        'Membuat dan mengembangkan ulang website Sistem Informasi Balai PSDA Bodri Kuto dari versi lama menjadi versi baru menggunakan CMS Joomla.',
+                        'Membantu karyawan menangani kendala pada komputer mereka.',
+                    ],
+                    'en' => [
+                        'Worked on rebuilding and developing the Balai PSDA Bodri Kuto Information System website, replacing the older version with a new version using Joomla CMS.',
+                        'Assisted staff with computer-related technical issues.',
                     ],
                 ],
             ],
         ];
 
         $education = [
-        [
-            'degree' => [
-            'id' => 'S1 Teknik Informatika, S.Kom.',
-            'en' => 'Bachelor of Computer Science (S.Kom.)',
-            ],
+            [
+                'degree' => [
+                    'id' => 'S1 Teknik Informatika, S.Kom.',
+                    'en' => 'Bachelor of Computer Science (S.Kom.)',
+                ],
 
-            'university' => [
-            'id' => 'Universitas Kristen Satya Wacana',
-            'en' => 'Satya Wacana Christian University',
+                'university' => [
+                    'id' => 'Universitas Kristen Satya Wacana',
+                    'en' => 'Satya Wacana Christian University',
+                ],
+                'year' => '2026',
             ],
-            'year' => '2026',   
-        ],
         ];
 
         $skills = [
