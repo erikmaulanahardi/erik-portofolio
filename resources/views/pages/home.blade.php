@@ -38,10 +38,13 @@
                 {{ $content['eyebrow'] }}
             </p>
 
-            <h1 class="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+            <h1 class="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-slate-950 mb-5 sm:text-5xl lg:text-6xl">
                 {{ $content['headline'] }}
             </h1>
 
+            <h4 class="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-blue-700 sm:text-sm lg:text-2xl">
+                {{ $content['mini-headline'] }}
+            </h4>
             <p class="mt-6 max-w-2xl text-base leading-8 text-slate-600">
                 {{ $content['intro'] }}
             </p>
