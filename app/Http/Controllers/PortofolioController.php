@@ -164,11 +164,13 @@ class PortofolioController extends Controller
                     'id' => [
                         'Membangun ulang website Sistem Informasi Balai PSDA Bodri Kuto menggunakan Joomla CMS setelah menemukan masalah signifikan pada tata letak dan penyajian konten website sebelumnya.',
                         'Menata ulang halaman website dan mengorganisasi informasi untuk meningkatkan keterbacaan, navigasi, dan akses terhadap informasi instansi balai sehingga dapat mudah diakses oleh masyarakat maupun internal balai.',
+                        "Bekerja sama dengan staf divisi database saat proses deployment akhir website yang telah didesain ulang ke lingkungan production.",
                         'Membantu staf menangani kendala teknis terkait komputer selama periode magang',
                     ],
                     'en' => [
                         "Rebuilt the Balai PSDA Bodri Kuto Information System website using Joomla CMS after identifying significant issues with the previous website's layout and content presentation.",
                         "Reorganized the website's pages and structured information to enhance readability, navigation, and access to the institution's information, making it easily accessible to both the public and internal staff.",
+                        "Collaborated with the database division staff during the final deployment process of the redesigned website to the production environment.",
                         "Assisted staff in addressing technical computer issues during the internship period.",
                     ],
                 ],
