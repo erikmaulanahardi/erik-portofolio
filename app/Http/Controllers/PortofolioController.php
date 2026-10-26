@@ -58,7 +58,7 @@ class PortofolioController extends Controller
                 'eyebrow' => 'Web Developer Portfolio',
                 'headline' => 'Junior Web Developer',
                 'mini-headline' => 'Backend-Focused · PHP · MySQL · Laravel',
-                'intro' => "Hello! I'm Erik Maulana Hardianto, a Computer Science graduate with a focus on Software Engineering. I am building my career in web development and continuously seeking to enhance my skills in creating web applications. My focus is on deepening my knowledge in designing RESTful APIs, processing relational data, and developing business logic using PHP, Laravel, and MySQL.",
+                'intro' => "Hello! I'm Erik Maulana Hardianto, a Informatics Engineering graduate with a focus on Software Engineering. I am building my career in web development and continuously seeking to enhance my skills in creating web applications. My focus is on deepening my knowledge in designing RESTful APIs, processing relational data, and developing business logic using PHP, Laravel, and MySQL.",
                 'projects_title' => 'My Work & Projects',
                 'projects_intro' => 'Here are some of the projects I have worked on.',
                 'project_placeholder' => 'Project details will be added once the project information is available.',
@@ -152,7 +152,7 @@ class PortofolioController extends Controller
 
             'en' => [
                 'title' => 'About Me',
-                'description' => "I'm a Computer Science graduate with a strong interest in backend web development and relational database management.\n\n Through my final project, I independently developed an Employee Data Management and Payroll Recapitulation System using PHP and MySQL, featuring employee data management and automated payroll calculations.\n\n I also gained practical experience through an internship program as a Web Developer at Balai PSDA Bodri Kuto. During the internship, I assisted in rebuilding the institution's website using Joomla CMS and helped address technical computer issues faced by staff.\n\n I am currently strengthening my backend development skills, particularly in PHP, MySQL, REST API development, and Laravel. I look forward to learning from experienced developers and contributing to practical software projects",
+                'description' => "I'm a Informatics Engineering graduate with a strong interest in backend web development and relational database management.\n\n Through my final project, I independently developed an Employee Data Management and Payroll Recapitulation System using PHP and MySQL, featuring employee data management and automated payroll calculations.\n\n I also gained practical experience through an internship program as a Web Developer at Balai PSDA Bodri Kuto. During the internship, I assisted in rebuilding the institution's website using Joomla CMS and helped address technical computer issues faced by staff.\n\n I am currently strengthening my backend development skills, particularly in PHP, MySQL, REST API development, and Laravel. I look forward to learning from experienced developers and contributing to practical software projects",
             ],
         ];
 
@@ -181,7 +181,7 @@ class PortofolioController extends Controller
             [
                 'degree' => [
                     'id' => 'S1 Teknik Informatika, S.Kom.',
-                    'en' => 'Bachelor of Computer Science (S.Kom.)',
+                    'en' => 'Bachelor of Informatics Engineering (S.Kom.)',
                 ],
 
                 'university' => [
