@@ -149,7 +149,7 @@
                     <p class="mt-2 text-sm leading-6 text-slate-600">
                         {{ $lang === 'id'
                             ? 'S1 Teknik Informatika, S.Kom. (2026)'
-                            : 'Bachelor of Computer Science (S.Kom.) (2026)' }}
+                            : 'Bachelor of Informatics Engineering (S.Kom.) (2026)' }}
                     </p>
 
                     <p class="mt-2 text-sm leading-6 text-slate-600">

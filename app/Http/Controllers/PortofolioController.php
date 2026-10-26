@@ -58,7 +58,7 @@ class PortofolioController extends Controller
                 'eyebrow' => 'Web Developer Portfolio',
                 'headline' => 'Junior Web Developer',
                 'mini-headline' => 'Backend-Focused · PHP · MySQL · Laravel',
-                'intro' => "Hello! I'm Erik Maulana Hardianto, a Informatics Engineering graduate with a focus on Software Engineering. I am building my career in web development and continuously seeking to enhance my skills in creating web applications. My focus is on deepening my knowledge in designing RESTful APIs, processing relational data, and developing business logic using PHP, Laravel, and MySQL.",
+                'intro' => "Hello! I'm Erik Maulana Hardianto, an Informatics Engineering graduate with a focus on Software Engineering. I am building my career in web development and continuously seeking to enhance my skills in creating web applications. My focus is on deepening my knowledge in designing RESTful APIs, processing relational data, and developing business logic using PHP, Laravel, and MySQL.",
                 'projects_title' => 'My Work & Projects',
                 'projects_intro' => 'Here are some of the projects I have worked on.',
                 'project_placeholder' => 'Project details will be added once the project information is available.',
