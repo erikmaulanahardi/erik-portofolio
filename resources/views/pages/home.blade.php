@@ -4,7 +4,7 @@
 <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#home" class="text-lg font-bold tracking-tight text-slate-950">
-            Erik's Portfolio<span class="text-blue-600"></span>
+            Erik Maulana<span class="text-blue-600"></span>
         </a>
 
         <div class="hidden items-center gap-6 text-sm font-medium md:flex">
