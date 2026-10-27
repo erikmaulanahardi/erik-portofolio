@@ -244,12 +244,14 @@
                     </div>
 
                     <div class="mt-auto pt-7">
+                        @if (!empty($project['live_url']))
                         <a
-                            href="{{ $project['github'] }}"
+                            href="{{ $project['live_url'] }}"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
-                            GitHub Repository
+                            {{ $lang === 'id' ? 'Lihat Tampilan Live Website' : 'View Live Website' }}
+
                             <svg
                                 class="h-4 w-4"
                                 viewBox="0 0 24 24"
@@ -260,6 +262,25 @@
                                 <path d="M7 17 17 7M7 7h10v10" />
                             </svg>
                         </a>
+                        @elseif (!empty($project['github']))
+                        <a
+                            href="{{ $project['github'] }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
+                            {{ $lang === 'id' ? 'Repository GitHub' : 'GitHub Repository' }}
+
+                            <svg
+                                class="h-4 w-4"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M7 17 17 7M7 7h10v10" />
+                            </svg>
+                        </a>
+                        @endif
                     </div>
                 </article>
                 @endforeach
@@ -327,8 +348,8 @@
 
             <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
                 {{ $lang === 'id'
-                ? 'Sertifikat & Pencapaian'
-                : 'Certificates & Achievements' }}
+                ? 'Sertifikat, Pelatihan, & Pencapaian'
+                : 'Certificates, Courses, & Achievements' }}
             </h2>
 
             <div class="mt-8 grid gap-6 sm:grid-cols-2">
@@ -363,8 +384,8 @@
 
                     <p class="mt-4 text-sm leading-7 text-slate-600">
                         {{ $lang === 'id'
-                        ? 'Penghargaan atas penyelesaian seluruh coursework dalam program Database Design and Programming with SQL.'
-                        : 'Awarded for satisfactory completion of all coursework in Database Design and Programming with SQL.' }}
+                        ? 'Menyelesaikan seluruh materi kursus Database Design and Programming with SQL melalui Oracle Academy sebagai bagian dari mata kuliah Sertifikasi Software Engineering - Oracle di program studi Teknik Infomatika.'
+                        : 'Completed all coursework in Database Design and Programming with SQL through Oracle Academy as part of the Sertifikasi Software Engineering - Oracle course in the Informatics Engineering program' }}
                     </p>
 
                     <div class="mt-5 flex items-center gap-2 text-sm text-slate-500">

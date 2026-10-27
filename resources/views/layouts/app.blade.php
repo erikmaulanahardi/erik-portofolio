@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Erik Maulana Hardianto | Backend Developer</title>
+    <title>Erik Maulana Hardianto | Junior Web Developer</title>
 
     <meta
         name="description"
-        content="Portofolio Erik Maulana Hardianto, Backend Developer yang berfokus pada PHP, Laravel, dan MySQL.">
+        content="Portofolio Erik Maulana Hardianto, Junior Web Developer yang memiliki minat dan fokus di bidang Back-End Development">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

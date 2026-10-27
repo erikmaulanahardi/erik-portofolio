@@ -78,13 +78,13 @@ class PortofolioController extends Controller
                 'footer' => 'Built with Laravel and Tailwind CSS.',
             ],
         ];
-
+     
         $projects = [
             [
                 'id' => [
                     'title' => 'Sistem Manajemen Data Karyawan dan Rekapitulasi Payroll pada PT BPR BKK Ungaran',
-                    'type' => 'Tugas Akhir',
-                    'description' => 'Aplikasi berbasis web untuk mengelola data karyawan dan mendukung proses penggajian di PT BPR BKK Ungaran. Sistem ini membantu mengorganisasi informasi karyawan serta menghitung gaji berdasarkan jam kerja, insentif, dan lembur.',
+                    'type' => 'Tugas Akhir Akademik',
+                    'description' => 'Merancang dan membuat aplikasi berbasis web untuk mengelola data karyawan dan mendukung proses penggajian di PT BPR BKK Ungaran. Sistem ini membantu mengorganisasi informasi karyawan serta menghitung gaji berdasarkan jam kerja, insentif, dan lembur.',
                     'features' => [
                         'CRUD data karyawan',
                         'Perhitungan otomatis gaji berdasarkan jam kerja, insentif, dan lembur',
@@ -98,7 +98,7 @@ class PortofolioController extends Controller
 
                 'en' => [
                     'title' => 'Employee Data Management and Payroll Recapitulation System at PT BPR BKK Ungaran',
-                    'type' => 'Final Project',
+                    'type' => 'Final Academic Project',
                     'description' => 'A web-based application for managing employee data and supporting payroll processes at PT BPR BKK Ungaran, including salary calculations based on working hours, incentives, and overtime.',
                     'features' => [
                         'Employee data CRUD',
@@ -109,6 +109,38 @@ class PortofolioController extends Controller
                     'technologies' => ['PHP', 'MySQL', 'Bootstrap'],
                     'github' => 'https://github.com/erikmaulanahardi/employee-payroll-management-system-php',
                     'image' => 'images/projects/ttu-dashboard-screenshot.png',
+                ],
+            ],
+
+            [
+                'id' => [
+                    'title' => 'Redesain dan Pengembangan Website Balai PSDA Bodri Kuto',
+                    'type' => 'Proyek Magang',
+                    'description' => 'Website informasi dari Balai PSDA Bodri Kuto yang dibangun ulang menggunakan Joomla CMS untuk menyajikan profil balai, program dan kegiatan, berita, serta informasi sumber daya air dalam struktur yang lebih terorganisasi.',
+                    'features' => [
+                        'Informasi profil dan kelembagaan balai ',
+                        'Informasi program dan kegiatan mengenai balai',
+                        'Publikasi berita dan informasi terkini mengenai balai',
+                        'Penyajian informasi mengenai sumber daya air seperti hidrologi, peta rawan banjir, curah hujan, dan lain-lain',
+                    ],
+                    'technologies' => ['Joomla CMS', 'MySQL'],
+                    'live_url' => 'https://bpusdataru-bk.jatengprov.go.id/',
+                    'image' => 'images/projects/psdabk-dashboard-screenshot.png',
+                ],
+
+                'en' => [
+                    'title' => 'Website Redesign and Redevelopment for Balai PSDA Bodri Kuto',
+                    'type' => 'Internship Project',
+                    'description' => 'An informational website for Balai PSDA Bodri Kuto that was rebuilt using Joomla CMS to present the institution’s profile, programs and activities, news, and water resource information in a more organized structure.',
+                    'features' => [
+                        'Institutional profile and organizational information',
+                        "Information on the institution's programs and activities",        
+                        'Publication of institutional news and updates',
+                        'Presentation of water resource information, including hydrology, flood-prone area maps, rainfall data, and other related information',
+                    ],
+                    'technologies' => ['Joomla CMS', 'MySQL'],
+                    'live_url' => 'https://bpusdataru-bk.jatengprov.go.id/',
+                    'image' => 'images/projects/psdabk-dashboard-screenshot.png',
                 ],
             ],
 
@@ -162,16 +194,18 @@ class PortofolioController extends Controller
                 'position' => 'Web Developer Intern (April 2025 - July 2025)',
                 'description' => [
                     'id' => [
-                        'Membangun ulang website Sistem Informasi Balai PSDA Bodri Kuto menggunakan Joomla CMS setelah menemukan masalah signifikan pada tata letak dan penyajian konten website sebelumnya.',
-                        'Menata ulang halaman website dan mengorganisasi informasi untuk meningkatkan keterbacaan, navigasi, dan akses terhadap informasi instansi balai sehingga dapat mudah diakses oleh masyarakat maupun internal balai.',
-                        "Bekerja sama dengan staf divisi database saat proses deployment akhir website yang telah didesain ulang ke lingkungan production.",
-                        'Membantu staf menangani kendala teknis terkait komputer selama periode magang',
+                        'Membangun ulang website Sistem Informasi Balai PSDA Bodri Kuto dari nol menggunakan Joomla CMS setelah menemukan permasalahan signifikan pada struktur HTML, tata letak, dan penyajian konten website sebelumnya.',
+                        'Merancang tata letak dan struktur halaman website secara mandiri dengan mempertimbangkan masukan dan arahan staf, sehingga informasi kelembagaan dapat disajikan secara lebih terorganisasi dan mudah dinavigasi oleh masyarakat publik dan pihak internal balai',
+                        "Mengelola dan memublikasikan konten yang disediakan oleh staf, mencakup berita, kegiatan balai, informasi hidrologi dan curah hujan, serta peta rawan banjir, untuk memperkaya informasi yang tersedia bagi masyarakat",
+                        "Berkolaborasi dengan staf divisi database dalam proses deployment website hasil redesain ke lingkungan production menggunakan domain resmi instansi",
+                        'Membantu staf menangani kendala teknis terkait permasalahan hardware dan software selama periode magang',
                     ],
                     'en' => [
                         "Rebuilt the Balai PSDA Bodri Kuto Information System website using Joomla CMS after identifying significant issues with the previous website's layout and content presentation.",
-                        "Reorganized the website's pages and structured information to enhance readability, navigation, and access to the institution's information, making it easily accessible to both the public and internal staff.",
-                        "Collaborated with the database division staff during the final deployment process of the redesigned website to the production environment.",
-                        "Assisted staff in addressing technical computer issues during the internship period.",
+                        "Independently designed and organized the website’s page structure, incorporating staff input and guidance to make institutional information more organized and easier to navigate by publics and internal staff",
+                        "Managed and published staff-provided content, including news, institutional activities, hydrological and rainfall information, and flood-prone area maps, expanding the information available to the public.",
+                        "Collaborated with database division staff to deploy the redesigned website to the production environment using the institution’s official domain.",
+                        "Assisted staff with computer hardware and software issues during the internship."
                     ],
                 ],
             ],
