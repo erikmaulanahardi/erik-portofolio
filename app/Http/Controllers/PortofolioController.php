@@ -40,7 +40,7 @@ class PortofolioController extends Controller
                 'education_text' => 'Informasi institusi, program studi, dan tahun kelulusan akan ditambahkan.',
                 'certificates_title' => 'Sertifikasi',
                 'certificates_text' => 'Sertifikasi yang tersedia akan ditambahkan di sini.',
-                'contact_title' => 'Mari terhubung',
+                'contact_title' => 'Mari Terhubung Dengan Saya!',
                 'contact_text' => 'Silakan hubungi saya melalui tautan kontak profesional yang akan dicantumkan di sini.',
                 'projects_button' => 'Lihat proyek',
                 'contact_button' => 'Hubungi saya',
@@ -71,13 +71,14 @@ class PortofolioController extends Controller
                 'education_text' => 'Institution, degree, and graduation year will be added.',
                 'certificates_title' => 'Certifications',
                 'certificates_text' => 'Available certifications will be listed here.',
-                'contact_title' => "Let's connect",
-                'contact_text' => 'Contact details and professional profile links will be added here.',
+                'contact_title' => "Let's Connect With Me!",
+                'contact_text' => 'You can contact me via my contact links provided in here.',
                 'projects_button' => 'View projects',
                 'contact_button' => 'Contact me',
                 'footer' => 'Built with Laravel and Tailwind CSS.',
             ],
         ];
+
      
         $projects = [
             [
@@ -178,13 +179,15 @@ class PortofolioController extends Controller
 
         $about = [
             'id' => [
-                'title' => 'Tentang Saya',
-                'description' => "Saya merupakan lulusan Teknik Informatika yang memiliki minat besar pada pengembangan web backend dan pengelolaan basis data relasional.\n\n Melalui tugas akhir, saya mengembangkan secara mandiri Sistem Manajemen Data Karyawan dan Rekapitulasi Payroll menggunakan PHP dan MySQL, dengan fitur pengelolaan data karyawan serta perhitungan gaji otomatis.\n\n Saya juga memperoleh pengalaman praktik melalui program magang sebagai Web Developer di Balai PSDA Bodri Kuto. Selama magang, saya membantu membangun ulang website instansi menggunakan Joomla CMS serta membantu menangani kendala teknis komputer yang dialami staf.\n\n Saat ini saya sedang memperkuat kemampuan pengembangan backend, khususnya dalam PHP, MySQL, pengembangan REST API, dan Laravel. Saya berharap dapat belajar dari para pengembang berpengalaman serta berkontribusi pada proyek perangkat lunak yang bersifat praktis.",
+                'title' => 'Profil Saya',
+                'image' => 'images/projects/my-profile-photo.jpeg',
+                'description' => "Saya merupakan lulusan Teknik Informatika yang memiliki minat besar pada pengembangan web dan pengelolaan basis data relasional.\n\n Melalui tugas akhir, saya mengembangkan secara mandiri Sistem Manajemen Data Karyawan dan Rekapitulasi Payroll menggunakan PHP dan MySQL, dengan fitur pengelolaan data karyawan serta perhitungan gaji otomatis.\n\n Saya juga memperoleh pengalaman praktik melalui program magang sebagai Web Developer di Balai PSDA Bodri Kuto. Selama magang, saya membantu membangun ulang website instansi menggunakan Joomla CMS serta membantu menangani kendala teknis komputer yang dialami staf.\n\n Saat ini saya sedang memperkuat kemampuan pengembangan web terutama di bagian back-end, khususnya dalam PHP, MySQL, pengembangan REST API, dan Laravel. Saya berharap dapat belajar dari para pengembang berpengalaman serta berkontribusi pada proyek perangkat lunak yang bersifat praktis.",
             ],
 
             'en' => [
-                'title' => 'About Me',
-                'description' => "I'm a Informatics Engineering graduate with a strong interest in backend web development and relational database management.\n\n Through my final project, I independently developed an Employee Data Management and Payroll Recapitulation System using PHP and MySQL, featuring employee data management and automated payroll calculations.\n\n I also gained practical experience through an internship program as a Web Developer at Balai PSDA Bodri Kuto. During the internship, I assisted in rebuilding the institution's website using Joomla CMS and helped address technical computer issues faced by staff.\n\n I am currently strengthening my backend development skills, particularly in PHP, MySQL, REST API development, and Laravel. I look forward to learning from experienced developers and contributing to practical software projects",
+                'title' => 'My Profile',
+                'image' => 'images/projects/my-profile-photo.jpeg',
+                'description' => "I'm an Informatics Engineering graduate with a strong interest in web development and relational database management.\n\n Through my final project, I independently developed an Employee Data Management and Payroll Recapitulation System using PHP and MySQL, featuring employee data management and automated payroll calculations.\n\n I also gained practical experience through an internship program as a Web Developer at Balai PSDA Bodri Kuto. During the internship, I assisted in rebuilding the institution's website using Joomla CMS and helped address technical computer issues faced by staff.\n\n I am currently strengthening my web development skills especially in back-end environments, particularly in PHP, MySQL, REST API development, and Laravel. I look forward to learning from experienced developers and contributing to practical software projects",
             ],
         ];
 

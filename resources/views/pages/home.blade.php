@@ -84,18 +84,26 @@
     </section>
 
     <section id="about" class="mx-auto max-w-6xl px-6 py-20">
-        <div class="grid gap-10 md:grid-cols-2">
+        @php
+        $aboutContent = $about[$lang] ?? $about['id'];
+        @endphp
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
 
             <div>
                 <p class="text-sm font-semibold uppercase tracking-widest text-blue-600">
                     {{ $content['nav_about'] }}
                 </p>
-
                 <h2 class="mt-3 text-3xl font-bold text-slate-950">
                     {{ $about[$lang]['title'] }}
                 </h2>
 
-                <p class="whitespace-pre-line mt-4 text-base leading-7 text-slate-600">
+                <img
+                    src="{{ asset($aboutContent['image']) }}"
+                    alt="{{ $aboutContent['title'] }}"
+                    class="mt-5 mb-6 w-64 h-auto rounded-2xl object-contain hover:shadow-2xl hover:-translate-y-1 shadow-lg"
+                />
+            
+                <p class="whitespace-pre-line text-base leading-8 text-slate-600">
                     {{ $about[$lang]['description'] }}
                 </p>
             </div>
